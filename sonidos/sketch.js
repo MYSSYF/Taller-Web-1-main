@@ -17,18 +17,18 @@ function setup() {
   vol = new Tone.Volume(-24).toDestination();
   synth =  new Tone.PolySynth().connect(vol);
 
-  var canvas = createCanvas(1900, 800);
+  let canvas = createCanvas(1900, 800);
   canvas.parent("canvasdiv");
   butom = [];
 cajon = []
 pyramide =[]
-for (let i = 0; i < 1; i++) {
+for (let i = 0; i < 0; i++) {
   cajon.push (new ball(100+i*300,100+i*200))
 }
-for (let i = 0; i < 1; i++) {
+for (let i = 0; i < 0; i++) {
   butom.push (new box(100+i*100,100+i*200))
 }
-for (let i = 0; i < 1; i++) {
+for (let i = 0; i < 0; i++) {
   pyramide.push (new triang(100+i*200,i+100))
 }
 
