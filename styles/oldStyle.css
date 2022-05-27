@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/background.png");
+    margin: 0;
+}
+
+header {
+    padding: 0px 14px;
+    background-color: rgb(255, 255, 255);
+    z-index: 10;
+}
+
+.flex {
+    display: flex;
+}
+
+.lader {
+    width: 100%;
+}
+
+.menuR {
+    display: none;
+    justify-content: right;
+    padding: 30px;
+    width: 100%;
+}
+
+.menu {
+
+    justify-content: right;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.menu__top {
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.menu__top__ul {
+    width: 100%;
+    justify-content: right;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.menu__top__buttons {
+    width: 100%;
+    align-items: center;
+}
+
+.menu__top__item {
+    padding: 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: 10px 35px;
+}
+
+.barra {
+    background-color: black;
+    height: 1px;
+}
+
+.menu__bot {
+    width: 100%;
+
+}
+
+.menu__bot__item {
+    padding: 12px 20px;
+    position: relative;
+
+}
+
+.menu__bot__item:hover {
+    background-color: rgb(250, 234, 214, 0.5);
+    border-radius: 20px;
+
+}
+
+.menu__top__item:hover {
+    background-color: rgb(250, 234, 214, 0.5);
+    border-radius: 20px;
+}
+
+.menu__extend__item:hover {
+    background-color: rgb(250, 234, 214, 0.7);
+    border-radius: 20px;
+}
+
+.menu__extend {
+    display: none;
+    position: absolute;
+    background-color: rgb(201, 201, 201, 0.3);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 6px 10px;
+    left: 0;
+    top: 50px;
+    z-index: 10;
+}
+
+.menu__extend__item {
+    padding: 10px 10px;
+    font-size: 0.9em;
+}
+
+.menu__bot__item:hover>.menu__extend {
+    display: block;
+
+}
+
+.menu__bot__item button {
+    font-size: 1.1em;
+    font-family: 'Saira', sans-serif;
+    background-color: transparent;
+    border: none;
+}
+
+.menu__bot__item a {
+    font-size: 1.1em;
+    font-family: 'Saira', sans-serif;
+    background-color: transparent;
+    border: none;
+}
+
+.menu__top__item a {
+    font-size: 0.9em;
+    font-family: 'Saira', sans-serif;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+}
+
+.menu__top__item button {
+    font-size: 1.1em;
+    font-family: 'Saira', sans-serif;
+    background-color: rgb(250, 234, 214, 0.5);
+    border-radius: 30%;
+    border: none;
+    padding: 0px 10px;
+}
+
+.menu__bot__ul {
+
+    justify-content: right;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type=text] {
+    height: 30px;
+    background-image: url(../img/search.png);
+    border: none;
+    background-color: rgb(207, 151, 66, 0.22);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 1.1em;
+    font-family: 'Saira', sans-serif;
+    padding: 20PX;
+    border-radius: 40px;
+}
+
+.search__bar {
+    padding: 10px 10px;
+    height: 100%;
+
+}
+
+::placeholder {
+    color: #000000;
+    opacity: 0.6;
+}
+
+.banner {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.img__banner {
+    z-index: 1;
+    object-fit: fill;
+    height: 730px;
+}
+
+
+.texto {
+    position: absolute;
+    z-index: 2;
+    bottom: 70px;
+    left: 120px;
+
+
+}
+
+.titulo__banner {
+    font-size: 5em;
+    font-family: 'Roboto', sans-serif;
+    color: #799936;
+    margin-bottom: 2%;
+}
+
+.subtexto__banner {
+
+    font-family: 'Saira', sans-serif;
+    color: #4D5739;
+    font-size: 2em;
+}
+
+.features {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img__feat {
+    z-index: 1;
+    height: 500px;
+    width: 100%;
+}
+
+.features__item {
+    width: 33.3%;
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 1.3em;
+    padding: 0 0 0 0;
+    text-align: center;
+
+}
+
+.features__item:hover .info {
+    opacity: 1;
+}
+
+h2 {
+    padding-top: 30%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.fetures__item__text {
+    padding: 40px 30px 0 30px;
+    font-family: 'Saira', sans-serif;
+
+}
+
+.disponibilidad {
+    background-color: rgb(121, 153, 54, 0.5);
+    flex-direction: column;
+    width: 100%;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.disponibilidad__title {
+    font-family: 'Sarpanch', sans-serif;
+    font-size: 2.7em;
+}
+
+.disponibilidad__content {
+    width: 100%;
+    margin: 50px;
+    justify-content: space-evenly;
+}
+
+.disp__text {
+    width: 30%;
+    font-size: 1.7em;
+    font-family: 'Saira', sans-serif;
+}
+
+.disponibilidad__margen {
+    padding: 20px 20px;
+}
+
+.disponibilidad__cantidad {
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Saira', sans-serif;
+}
+
+input[type=number] {
+    height: 30px;
+    border: none;
+    background-color: rgb(207, 151, 66, 0.22);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 1.1em;
+    font-family: 'Saira', sans-serif;
+    padding: 10PX;
+    border-radius: 40px;
+    width: 100px;
+}
+
+.disponibilidad__options {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disponibilidad__options button {
+    font-size: 1.1em;
+    font-family: 'Saira', sans-serif;
+    background-color: rgba(250, 234, 214, 0.5);
+    border-radius: 10px;
+    border: none;
+    padding: 0px 10px;
+    width: 30%;
+}
+
+.disponibilidad__options button:hover {
+    background-color: rgba(255, 220, 177, 0.5);
+    border-radius: 10px;
+}
+
+.dispo__text {
+    padding: 20px 0;
+    font-family: 'Saira', sans-serif;
+}
+
+input[type=email] {
+    height: 30px;
+    border: none;
+    background-color: rgb(207, 151, 66, 0.22);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 1.1em;
+    font-family: 'Saira', sans-serif;
+    padding: 10PX;
+    border-radius: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.dispo__title {
+    margin-top: 10%;
+    font-size: 1.4em;
+}
+
+.mision {
+    background-color: rgb(255, 255, 255, 0.6);
+    width: 100%;
+    padding: 30px 30px;
+    justify-content: center;
+}
+
+.sub__mision {
+    margin: 20px 0px;
+    flex-direction: column;
+    background-color: rgb(250, 234, 214, 0.3);
+    border-radius: 10px;
+    align-items: center;
+    width: 50%;
+}
+
+.mision__title {
+    padding-top: 3%;
+    font-family: 'Sarpanch', sans-serif;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.mision__text {
+    text-align: center;
+    padding: 50px 130px;
+    font-size: 1.4em;
+    font-family: 'Saira', sans-serif;
+}
+
+.title__product {
+    background-color: rgb(121, 153, 54, 0.5);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+
+.title__product__text {
+    padding: 0;
+    font-family: 'Sarpanch', sans-serif;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.product {
+    background-color: rgba(17, 44, 10, 0.2);
+    width: 60%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 390px;
+    align-items: center;
+    padding: 30px;
+    border-radius: 30px;
+
+}
+
+.popular__item {
+    margin: 20px 0;
+    background-color: rgb(7, 22, 7, 0.5);
+    width: 320px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+    font-family: 'Saira', sans-serif;
+}
+
+h3 {
+    padding: 5% 0;
+}
+
+.certificated {
+    width: 100%;
+    background-color: rgb(255, 239, 217, 0.4);
+    flex-direction: column;
+
+}
+
+.cert {
+    padding: 30px;
+    justify-content: center;
+    font-size: 1em;
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+}
+
+.certificated__logos {
+    justify-content: center;
+}
+
+.cert__img {
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: #3b3b3b;
+    color: #777777;
+    padding: 60px 0;
+}
+
+.fot__text {
+    padding: 6px;
+    text-align: center;
+}
